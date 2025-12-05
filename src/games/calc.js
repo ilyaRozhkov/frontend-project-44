@@ -16,7 +16,7 @@ const getRandomExpression = () => {
   const firstElement = getRandomInRange(MIN_RANDOM, MAX_RANDOM_CALC)
   const secondElement = getRandomInRange(MIN_RANDOM, MAX_RANDOM_CALC)
   const operation = getRandomOperation()
-  return `${firstElement} ${operation} ${secondElement}`
+  return `${firstElement} ${operation} ${secondElement}`.trim()
 }
 
 const checkAnswer = expression => math.evaluate(expression)
@@ -28,5 +28,6 @@ const run = () => {
 }
 
 export default run
+
 
 
