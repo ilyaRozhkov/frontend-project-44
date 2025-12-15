@@ -15,7 +15,7 @@ export const indexDriver = (game) => {
         //console.log('DEBUG: correctResult =', correctResult)
         //console.log('DEBUG: typeof questionNum =', typeof questionNum)
 
-        console.log('Question:' + questionNum)
+        console.log('Question: ' + questionNum)
         const answer = readlineSync.question(`Your answer: `)
         if (answer === correctResult) {
             console.log('Correct!')
@@ -30,4 +30,5 @@ export const indexDriver = (game) => {
     }
     }
 }
+
 
